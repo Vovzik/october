@@ -1,0 +1,32 @@
+.gallery-prev,
+.gallery-next {
+    width: rem(54px);
+    height: rem(54px);
+    border-radius: 50%;
+    border: rem(1px) solid #000000;
+    cursor: pointer;
+    transition: 0.4s;
+    &:hover {
+        opacity: 0.5;
+    }
+}
+
+.gallery-prev {
+    background: url('../img/gallery/prev.svg') no-repeat;
+    background-position: center;
+    margin-right: rem(25px);
+}
+
+.gallery-next {
+    background: url('../img/gallery/next.svg') no-repeat;
+    background-position: center;
+}
+
+@media (max-width: 480px) {
+    .gallery-prev,
+    .gallery-next {
+        width: rem(27px);
+        height: rem(27px);
+        background-size: rem(13px);
+    }
+}
