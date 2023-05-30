@@ -1,8 +1,41 @@
-//Пример подключения
-/* @font-face {
-    font-family: 'Cako';
-    src: url('../fonts/Cako-Regular.woff'),
-        url('../fonts/Cako-Regular.woff2');
+@font-face {
+    font-family: 'Sora';
+    src: url('../fonts/sora/Sora-Bold.woff'),
+        url('../fonts/sora/Sora-Bold.woff2');
+    font-weight: 700;
+    font-style: normal;
+}  
+
+
+@font-face {
+    font-family: 'Sora';
+    src: url('../fonts/sora/Sora-SemiBold.woff'),
+        url('../fonts/sora/Sora-SemiBold.woff2');
+    font-weight: 600;
+    font-style: normal;
+}  
+
+@font-face {
+    font-family: 'Sora';
+    src: url('../fonts/sora/Sora-Regular.woff');
+        /* url('../fonts/sora/Sora-Regular.woff2'); */
     font-weight: 400;
     font-style: normal;
-}  */
+}  
+
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter/Inter-Bold.woff'),
+        url('../fonts/Inter/Inter-Bold.woff2');
+    font-weight: 700;
+    font-style: normal;
+}  
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter/Inter-Regular.woff'),
+        url('../fonts/Inter/Inter-Regular.woff2');
+    font-weight: 400;
+    font-style: normal;
+}  

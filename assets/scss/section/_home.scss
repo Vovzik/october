@@ -1,0 +1,117 @@
+.home {
+
+    // .home__content
+
+    &__content {
+        padding: rem(321px) 0px rem(116px);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        overflow: hidden;
+    }
+
+    // .home__title
+
+    &__title {
+        font-family: 'Sora', sans-serif;
+        font-weight: 700;
+        font-size: rem(167px);
+        line-height: 100%;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-bottom: rem(183px);
+    }
+
+    // .home__title-text
+
+    &__title-text {
+        font-weight: 400;
+        line-height: 130%;
+        font-size: rem(36px);
+    }
+
+    // .home__inner
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    // .home__text
+
+    &__text {
+        max-width: rem(757px);
+        margin-right: rem(30px);
+        font-family: 'Sora', sans-serif;
+        font-weight: 400;
+        font-size: rem(20px);
+        line-height: 130%;
+        color: #FFFFFF;
+    }
+
+
+   @media (max-width: 1550px) {
+    &__content {
+        padding: 250px 0px 50px;
+    }
+    &__title {
+        font-size: rem(100px);
+    }
+
+    // .home__title-text
+
+    &__title-text {
+        font-size: rem(20px);
+    }
+   }
+
+   @media (max-width: 991px) {
+      &__inner {
+        flex-direction: column;
+      }
+
+      &__text {
+        margin-right: 0px;
+        width: 100%;
+        text-align: center;
+        margin-bottom: rem(10px);
+      }
+
+      &__content {
+        padding-top: rem(180px);
+      }
+
+      &__title {
+        font-size: rem(90px);
+      }
+   }
+
+   @media (max-width: 767px) {
+    &__title {
+        font-size: rem(60px);
+      }
+   }
+
+   @media (max-width: 480px) {
+     &__content {
+        padding: rem(189px) 0px rem(80px);
+     }
+
+     &__title {
+        font-size: rem(36px);
+        text-align: center;
+        margin-bottom: rem(95px);
+     }
+
+     &__title-text {
+        font-size: rem(16px);
+        text-align: center;
+     }
+
+     &__text {
+        font-size: rem(12px);
+        margin-bottom: rem(20px);
+     }
+   }
+}

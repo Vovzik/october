@@ -1,0 +1,25 @@
+.home-btn {
+    background: rgba(0, 69, 126, 0.01);
+    box-shadow: inset 0px rem(4px) rem(6px) rgba(243, 243, 243, 0.2), inset 0px 1px 40px rgba(237, 236, 236, 0.2), inset 0px -80px 65px rgba(212, 212, 212, 0.2);
+    backdrop-filter: blur(rem(25px));
+    border-radius: rem(15px);
+    padding: rem(22px);
+    min-width: rem(393px);
+    text-align: center;
+    font-family: 'Sora', sans-serif;
+    font-weight: 400;
+    font-size: rem(24px);
+    line-height: 130%;
+    color: #FFFFFF;
+    transition: 0.4s;
+    &:hover {
+        opacity: 0.6;
+    }
+
+
+    @media (max-width: 480px) {
+        min-width: 100%;
+        padding: rem(14px);
+        font-size: rem(16px);
+    }
+}

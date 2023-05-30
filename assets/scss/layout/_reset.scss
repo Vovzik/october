@@ -1,4 +1,4 @@
-$container: 1780px;
+$container: rem(1280px);
 
 *,
 *::before,
@@ -71,29 +71,33 @@ h1 {
   padding: 0px 15px;
 }
 
+.lock {
+  overflow: hidden;
+}
+
 
 @media (min-width:  576px) {
   .container {
-    max-width: 560px;
+    max-width: rem(560px);
     margin: 0 auto;
-    padding: 0px 10px;
+    padding: 0px 20px;
   }
 }
 
 @media (min-width:  768px) {
   .container {
-    max-width: 740px;
+    max-width: rem(740px);
     margin: 0 auto;
-    padding: 0px 10px;
+    padding: 0px 20px;
   }
 }
 
 
 @media (min-width:  992px) {
   .container {
-    max-width: 980px;
+    max-width: rem(980px);
     margin: 0 auto;
-    padding: 0px 10px;
+    padding: 0px 20px;
   }
 }
 
@@ -102,7 +106,7 @@ h1 {
   .container {
     max-width: $container;
     margin: 0 auto;
-    padding: 0px 10px;
+    padding: 0px 20px;
   }
 }
 

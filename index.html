@@ -5,28 +5,84 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>start site</title>
-   <link rel="stylesheet" href="assets/css/main.css">
+  <title>Октябрьский</title>
+  <link rel="stylesheet" href="assets/css/main.css">
 </head>
+
 <body>
 
   <div class="wrapper ">
     <header class="header">
-        header
+      <div class="header__content header-fixed-js">
+        <div class="container">
+             <div class="header__inner">
+                <a class="header__logo" href="/">
+                  <img class="header__logo-img" src="assets/img/header/logo.svg" alt="Logo">
+                </a>
+                <nav class="header__nav header-nav-open-js">
+                   <ul class="header__list">
+                    <li>
+                      <a href="#">
+                        О нас
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        Продукция
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        Услуги
+                      </a>
+                    </li>
+                    
+                   </ul>
+                </nav>
+                <div class='header__burger js__header-burgerclick'>
+                     <div class='header__burger-item js__header-burger header__burger--top'></div>
+                     <div class='header__burger-item js__header-burger header__burger--middle'></div>
+                     <div class='header__burger-item js__header-burger header__burger--bottom'></div>
+                </div>
+                <a class="header__btn header-btn" href="#">
+                  Позвонить
+                </a>
+             </div>
+        </div>
+      </div>
     </header>
-      <main class="main">
-        content
-      </main>
-      <footer class="footer">
-         footer
-      </footer>
-    </div>
-  </div> 
+    <main class="main">
+      <section class="home">
+        <div class="home__content" style="background-image: url('assets/img/home/bg.jpg');">
+          <div class="container">
+             <h1 class="home__title">
+              <div class="home__title-text">
+                Судостроительный завод в Нижнем Новгороде
+              </div>
+                 Октябрьский
+             </h1>
+             <div class="home__inner">
+               <p class="home__text">
+                Наше предприятие ООО «Октябрьский СЗ НН» основано в 1993 году на базе Судостроительно – Судоремонтного завода им. 40 – годовщины октября
+               </p>
+               <a class="home__btn home-btn" href="#">
+                Заказать
+               </a>
+             </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      footer
+    </footer>
+  </div>
+  </div>
 
 
- 
 
-  <script src="assets/js/main.js"></script>
+
+  <script type="module" src="assets/js/main.js"></script>
 </body>
 
 </html>

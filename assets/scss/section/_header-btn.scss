@@ -1,0 +1,17 @@
+.header-btn {
+    padding: rem(17px);
+    min-width: rem(237px);
+    background: #FFFFFF;
+    border-radius: rem(15px);
+    font-family: 'Sora', sans-serif;
+    font-weight: 400;
+    font-size: rem(20px);
+    line-height: 130%;
+    color: #000000;
+    transition: 0.4s;
+    text-align: center;
+    &:hover {
+        background: #000;
+        color: #fff;
+    }
+}
