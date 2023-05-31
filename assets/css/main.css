@@ -1447,9 +1447,14 @@ button.swiper-pagination-bullet {
 }
 @font-face {
   font-family: "Sora";
-  src: url("../fonts/sora/Sora-Regular.woff");
-  /* url('../fonts/sora/Sora-Regular.woff2'); */
+  src: url("../fonts/sora/Sora-Regular.woff"), url("../fonts/sora/Sora-Regular.woff2");
   font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Sora";
+  src: url("../fonts/sora/Sora-Light.woff"), url("../fonts/sora/Sora-Light.woff2");
+  font-weight: 300;
   font-style: normal;
 }
 @font-face {
@@ -1577,6 +1582,22 @@ h1 {
 
 .main {
   flex-grow: 1;
+}
+
+.page-about__info p, .page-about__content p, .operating-principle__info p, .modernization__info p {
+  font-family: "Sora", sans-serif;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 140%;
+  color: #000000;
+}
+
+.breadcrumbs__item {
+  font-family: "Sora", sans-serif;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 130%;
+  color: #000000;
 }
 
 /* components */
@@ -1709,6 +1730,47 @@ h1 {
     background-size: 0.8125rem;
   }
 }
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.breadcrumbs__item {
+  position: relative;
+}
+.breadcrumbs__item:not(:last-child) {
+  padding-right: 1.6875rem;
+  margin-right: 1.25rem;
+}
+.breadcrumbs__item:not(:last-child):before {
+  content: "";
+  position: absolute;
+  top: 0.625rem;
+  right: 0px;
+  width: 0.4375rem;
+  height: 0.4375rem;
+  border-radius: 50%;
+  background: #00457E;
+}
+.breadcrumbs__item:last-child {
+  color: #00457E;
+}
+.breadcrumbs__item-link {
+  color: #000;
+  transition: 0.4s;
+}
+.breadcrumbs__item-link:hover {
+  color: #00457E;
+}
+@media (max-width: 480px) {
+  .breadcrumbs__item {
+    font-size: 0.875rem;
+  }
+  .breadcrumbs__item:not(:last-child):before {
+    top: 0.3125rem;
+  }
+}
+
 /* section */
 .header__content {
   background: #00457E;
@@ -2740,6 +2802,330 @@ h1 {
   }
   .gallery__box:nth-child(5) {
     height: 6.75rem;
+  }
+}
+
+.modernization__content {
+  padding: 10.75rem 0px 5.3125rem;
+}
+.modernization__inner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 2.8125rem;
+}
+.modernization__info {
+  width: 38.8125rem;
+  margin-right: 1.875rem;
+}
+.modernization__title {
+  font-family: "Sora", sans-serif;
+  font-weight: 600;
+  font-size: 3.125rem;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 3.75rem;
+}
+.modernization__text {
+  text-align: right;
+}
+.modernization__images {
+  width: 33.0625rem;
+  height: 42.4375rem;
+  overflow: hidden;
+  border-radius: 0.9375rem;
+}
+.modernization__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  transition: 0.4s;
+}
+.modernization__images:hover .modernization__img {
+  transform: scale(1.2);
+}
+@media (max-width: 1550px) {
+  .modernization__title {
+    font-size: 2.1875rem;
+    margin-bottom: 1.875rem;
+  }
+  .modernization__info p {
+    font-size: 1rem;
+  }
+  .modernization__inner {
+    margin-top: 1.875rem;
+  }
+  .modernization__content {
+    padding: 6.875rem 0px 3.125rem;
+  }
+  .modernization__images {
+    height: 31.25rem;
+  }
+}
+@media (max-width: 991px) {
+  .modernization__inner {
+    flex-direction: column;
+  }
+  .modernization__info {
+    width: 100%;
+    margin: 0px;
+    margin-bottom: 1.25rem;
+  }
+  .modernization__images {
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .modernization__content {
+    padding: 5rem 0px 1.875rem;
+  }
+  .modernization__title {
+    font-size: 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+  .modernization__info p {
+    font-size: 0.75rem;
+  }
+  .modernization__images {
+    height: 12rem;
+  }
+}
+
+.operating-principle__content {
+  padding: 5.3125rem 0px;
+}
+.operating-principle__title {
+  font-family: "Sora", sans-serif;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 130%;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 3.75rem;
+  max-width: 42.4375rem;
+}
+.operating-principle__title-text {
+  text-align: right;
+  font-family: "Sora", sans-serif;
+  font-weight: 600;
+  font-size: 1.625rem;
+  line-height: 130%;
+  margin-top: 1rem;
+}
+.operating-principle__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.operating-principle__inner:not(:last-child) {
+  margin-bottom: 3.75rem;
+}
+.operating-principle__info {
+  width: 40.5rem;
+}
+.operating-principle__images {
+  margin-left: 0.875rem;
+  width: 37.8125rem;
+  height: 27.5625rem;
+  overflow: hidden;
+  border-radius: 0.9375rem;
+}
+.operating-principle__images_left {
+  margin-left: 0rem;
+  margin-right: 0.875rem;
+}
+.operating-principle__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  transition: 0.4s;
+}
+.operating-principle__images:hover .operating-principle__img {
+  transform: scale(1.2);
+}
+@media (max-width: 1550px) {
+  .operating-principle__info p {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 991px) {
+  .operating-principle__inner {
+    flex-direction: column;
+  }
+  .operating-principle__info {
+    width: 100%;
+    order: -1;
+    margin-bottom: 1.25rem;
+  }
+  .operating-principle__images {
+    width: 100%;
+    margin: 0px;
+    margin: 0rem;
+    height: 18.75rem;
+  }
+}
+@media (max-width: 480px) {
+  .operating-principle__content {
+    padding: 1.875rem 0px;
+  }
+  .operating-principle__title {
+    font-size: 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+  .operating-principle__title-text {
+    margin-top: 0.3125rem;
+    font-size: 0.75rem;
+  }
+  .operating-principle__info p {
+    font-size: 0.75rem;
+  }
+  .operating-principle__inner:not(:last-child) {
+    margin-bottom: 1.25rem;
+  }
+  .operating-principle__images {
+    height: 13.3125rem;
+  }
+}
+
+.page-about__content {
+  padding: 10.75rem 0px 5.3125rem;
+}
+.page-about__content p {
+  margin-bottom: 3.75rem;
+}
+.page-about__inner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.page-about__inner:not(:last-child) {
+  margin-bottom: 3.75rem;
+}
+.page-about__margin {
+  margin-top: 2.8125rem;
+}
+.page-about__info {
+  width: 51.0625rem;
+}
+.page-about__info p {
+  margin-bottom: 0px;
+}
+.page-about__title {
+  font-family: "Sora", sans-serif;
+  font-weight: 600;
+  font-size: 3.125rem;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 4.0625rem;
+}
+.page-about__title-text {
+  text-align: right;
+}
+.page-about__title-text2 {
+  font-size: 2.5625rem;
+}
+.page-about__images {
+  width: 24.5625rem;
+}
+.page-about__margin-left {
+  margin-left: 1.875rem;
+}
+.page-about__box {
+  height: 31.8125rem;
+  overflow: hidden;
+  border-radius: 0.9375rem;
+  display: block;
+}
+.page-about__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  transition: 0.4s;
+}
+.page-about__box:hover .page-about__img, .page-about__box-bottom:hover .page-about__img {
+  transform: scale(1.2);
+}
+.page-about__box-bottom {
+  height: 13rem;
+  overflow: hidden;
+  border-radius: 0.9375rem;
+  display: block;
+  margin-top: 1.75rem;
+}
+.page-about__margin-right {
+  margin-right: 1.875rem;
+}
+@media (max-width: 1550px) {
+  .page-about__title {
+    font-size: 1.875rem;
+    margin-bottom: 1.875rem;
+  }
+  .page-about__info p, .page-about__content p {
+    font-size: 1rem;
+  }
+  .page-about__box {
+    height: 21.875rem;
+  }
+  .page-about__content {
+    padding: 7.5rem 0px 3.125rem;
+  }
+  .page-about__title-text2 {
+    font-size: 1.25rem;
+  }
+}
+@media (max-width: 991px) {
+  .page-about__inner {
+    flex-direction: column;
+  }
+  .page-about__info {
+    width: 100%;
+    order: -1;
+    margin: 0px;
+    margin-bottom: 1.25rem;
+  }
+  .page-about__images {
+    width: 100%;
+    margin: 0px;
+  }
+}
+@media (max-width: 480px) {
+  .page-about__content {
+    padding: 5.4375rem 0px 1.875rem;
+  }
+  .page-about__box {
+    height: 12.5rem;
+  }
+  .page-about__box-bottom {
+    height: 9.375rem;
+  }
+  .page-about__margin {
+    margin-top: 1.875rem;
+  }
+  .page-about__inner:not(:last-child) {
+    margin-bottom: 1.875rem;
+  }
+  .page-about__title {
+    font-size: 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+  .page-about__content p {
+    margin-bottom: 1.25rem;
+    font-size: 0.75rem;
+  }
+  .page-about__info p {
+    font-size: 0.75rem;
+    margin-bottom: 0px;
   }
 }
 

@@ -1,0 +1,139 @@
+.operating-principle {
+
+    // .operating-principle__content
+
+    &__content {
+        padding: rem(85px) 0px;
+    }
+
+    // .operating-principle__title
+
+    &__title {
+        font-family: 'Sora', sans-serif;
+        font-weight: 600;
+        font-size: 50px;
+        line-height: 130%;
+        text-transform: uppercase;
+        color: #000000;
+        margin-bottom: rem(60px);
+        max-width: rem(679px);
+    }
+
+    // .operating-principle__title-text
+
+    &__title-text {
+        text-align: right;
+        font-family: 'Sora', sans-serif;
+        font-weight: 600;
+        font-size: rem(26px);
+        line-height: 130%;
+        margin-top: rem(16px);
+    }
+
+    // .operating-principle__inner
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        &:not(:last-child) {
+            margin-bottom: rem(60px);
+        }
+    }
+
+    // .operating-principle__info
+
+    &__info {
+        width: rem(648px);
+
+        p {
+            @extend %fonts;
+        }
+    }
+
+    // .operating-principle__images
+
+    &__images {
+        margin-left: rem(14px);
+        width: rem(605px);
+        height: rem(441px);
+        overflow: hidden;
+        border-radius: rem(15px);
+        // .operating-principle__images_left
+
+        &_left {
+            margin-left: rem(0px);
+            margin-right: rem(14px);
+        }
+    }
+
+    // .operating-principle__img
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        transition: 0.4s;
+    }
+
+    &__images:hover  &__img {
+        transform: scale(1.2);
+    }
+
+    @media (max-width: 1550px) {
+        &__info {
+            p {
+                font-size: rem(16px);
+            }
+        }
+    }
+
+    @media (max-width: 991px) {
+        &__inner {
+            flex-direction: column;
+        }
+
+        &__info {
+            width: 100%;
+            order: -1;
+            margin-bottom: rem(20px);
+        }
+
+        &__images {
+            width: 100%;
+            margin: 0px;
+            margin: rem(0px);
+            height: rem(300px);
+        }
+    }
+
+    @media (max-width: 480px) {
+        &__content {
+            padding: rem(30px) 0px;
+        }
+
+        &__title {
+            font-size: rem(20px);
+            margin-bottom: rem(20px);
+        }
+
+        &__title-text {
+            margin-top: rem(5px);
+            font-size: rem(12px);
+        }
+
+        &__info p {
+            font-size: rem(12px);
+        }
+
+        &__inner:not(:last-child) {
+            margin-bottom: rem(20px);
+        }
+
+        &__images {
+            height: rem(213px);
+        }
+    }
+}

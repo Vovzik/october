@@ -17,9 +17,17 @@
 
 @font-face {
     font-family: 'Sora';
-    src: url('../fonts/sora/Sora-Regular.woff');
-        /* url('../fonts/sora/Sora-Regular.woff2'); */
+    src: url('../fonts/sora/Sora-Regular.woff'),
+         url('../fonts/sora/Sora-Regular.woff2');
     font-weight: 400;
+    font-style: normal;
+}  
+
+@font-face {
+    font-family: 'Sora';
+    src: url('../fonts/sora/Sora-Light.woff'),
+         url('../fonts/sora/Sora-Light.woff2');
+    font-weight: 300;
     font-style: normal;
 }  
 
