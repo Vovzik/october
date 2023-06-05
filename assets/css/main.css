@@ -1771,6 +1771,21 @@ h1 {
   }
 }
 
+.page-gallery-progresbar {
+  position: relative;
+  flex-grow: 1;
+  width: auto !important;
+  height: 5px !important;
+  background: #A6C1D7;
+}
+.page-gallery-progresbar .swiper-pagination-progressbar-fill {
+  background: #00457E;
+}
+
+.content-section-header {
+  padding: 10.75rem 0px 5.3125rem;
+}
+
 /* section */
 .header__content {
   background: #00457E;
@@ -3129,6 +3144,86 @@ h1 {
   }
 }
 
+.page-gallery__title {
+  font-family: "Sora", sans-serif;
+  font-weight: 600;
+  font-size: 3.125rem;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 3.75rem;
+  margin-top: 2.8125rem;
+}
+.page-gallery__subtitle {
+  font-family: "Sora", sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 140%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 2.8125rem;
+}
+.page-gallery__text {
+  font-family: "Sora", sans-serif;
+  font-weight: 400;
+  font-size: 1.625rem;
+  line-height: 130%;
+  color: #000000;
+  margin-bottom: 2.8125rem;
+}
+.page-gallery__slider {
+  overflow: hidden;
+}
+.page-gallery__slider:not(:last-child) {
+  margin-bottom: 2.8125rem;
+}
+.page-gallery__swiper-slide {
+  border-radius: 0.9375rem;
+  height: 14.0625rem;
+  overflow: hidden;
+}
+.page-gallery__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  transition: 0.4s;
+}
+.page-gallery__swiper-slide:hover .page-gallery__img {
+  transform: scale(1.2);
+}
+.page-gallery__inner {
+  display: flex;
+  align-items: center;
+  margin-top: 1.4375rem;
+}
+.page-gallery__progresbar {
+  margin-right: 5.125rem;
+}
+.page-gallery-exhibitions__content {
+  padding: 3.75rem 0px;
+}
+
+.media-gallery__content {
+  padding: 5.3125rem 0px;
+}
+.media-gallery__title {
+  font-family: "Sora", sans-serif;
+  font-weight: 600;
+  font-size: 3.125rem;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 3.75rem;
+}
+.media-gallery__items {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(1fr));
+  grid-gap: 1.1875rem;
+}
 .footer__content {
   background: #00457E;
   padding: 4.5rem 0px;

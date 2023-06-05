@@ -1,0 +1,39 @@
+.media-gallery {
+
+    // .media-gallery__content
+
+    &__content {
+        padding: rem(85px) 0px;
+    }
+
+    // .media-gallery__title
+
+    &__title {
+        font-family: 'Sora', sans-serif;
+        font-weight: 600;
+        font-size: rem(50px);
+        line-height: 140%;
+        text-transform: uppercase;
+        color: #000000;
+        margin-bottom: rem(60px);
+        
+    }
+
+    // .media-gallery__items
+
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(1fr));
+        grid-gap: rem(19px);
+    }
+
+    // .media-gallery__item
+
+    &__item {
+    }
+
+    // .media-gallery__img
+
+    &__img {
+    }
+}

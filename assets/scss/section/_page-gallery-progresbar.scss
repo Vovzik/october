@@ -1,0 +1,11 @@
+.page-gallery-progresbar {
+    position: relative;
+    flex-grow: 1;
+    width: auto !important;
+    height: 5px !important;
+    background: #A6C1D7;
+
+    .swiper-pagination-progressbar-fill {
+        background: #00457E;
+    }
+}

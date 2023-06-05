@@ -151,6 +151,27 @@ function ready() {
     }
 
     gallerySlider();
+
+    function pageGallerySlider () {
+      new Swiper('.page-gallery-slider-js', {
+       // Optional parameters
+       slidesPerView: 4,
+       spaceBetween: 21,
+       loop: true,
+       // Navigation arrows
+       navigation: {
+         nextEl: '.gallery-next-js',
+         prevEl: '.gallery-prev-js',
+       },
+       pagination: {
+        el: '.page-gallery-progresbar-js',
+        type: 'progressbar',
+      },
+     
+     });
+    }
+
+    pageGallerySlider();
 }
 
 
