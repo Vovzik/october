@@ -1,0 +1,110 @@
+.equipment {
+
+    // .equipment__content
+
+    &__content {
+        padding: rem(85px) 0px;
+    }
+
+    // .equipment__title
+
+    &__title {
+        font-family: 'Sora', sans-serif;
+        font-weight: 600;
+        font-size: rem(50px);
+        line-height: 140%;
+        text-transform: uppercase;
+        color: #000000;
+        margin-bottom: rem(60px);
+    }
+
+    // .equipment__inner
+
+    &__inner {
+        display: flex;
+        border: rem(2px) solid #000000;
+        border-radius: rem(15px);
+    }
+
+    // .equipment__column
+
+    &__column {
+        width: rem(674px);
+        overflow: hidden;
+        border-right: rem(2px) solid #000000;
+        display: flex;
+        align-items: center;
+        padding-left: rem(33px);
+    }
+
+    // .equipment__subtitle
+
+    &__subtitle {
+        font-family: 'Sora', sans-serif;
+        font-weight: 600;
+        font-size: rem(100px);
+        line-height: 140%;
+        text-transform: uppercase;
+        color: #000000;
+
+    }
+
+    // .equipment__column2
+
+    &__list {
+        width: rem(562px);
+        li {
+            padding: rem(38px);
+            font-family: 'Sora', sans-serif;
+            font-weight: 400;
+            font-size: rem(20px);
+            line-height: 140%;
+            text-transform: uppercase;
+            color: #000000;
+            &:not(:last-child) {
+                border-bottom: rem(2px) solid #000000;
+            }
+        }
+    }
+
+    @media(max-width: 1550px) {
+        &__list li {
+            padding: rem(20px);
+            font-size: rem(16px);
+        }
+
+        &__title {
+            font-size: rem(35px);
+            margin-bottom: rem(30px);
+        }
+
+        &__subtitle {
+            font-size: rem(70px);
+        }
+    }
+
+    @media(max-width: 480px) {
+        &__content {
+            padding: rem(30px) 0px;
+        }
+
+        &__title  {
+            font-size: rem(20px);
+            margin-bottom: rem(20px);
+        }
+
+        &__list li {
+            font-size: rem(12px);
+            padding: rem(17px) rem(13px);
+        }
+
+        &__subtitle {
+           font-size: rem(20px);
+        }
+
+        &__column {
+            padding-left: rem(15px);
+        }
+    }
+}
+

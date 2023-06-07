@@ -1,0 +1,20 @@
+.dredge258-120 {
+    .tehcnical-specifications__item {
+        padding: rem(20px) rem(10px);
+    }
+
+    .tehcnical-specifications__subtitle {
+        margin-bottom: rem(20px);
+    }
+
+    .tehcnical-specifications__item:nth-child(5) .tehcnical-specifications__text {
+        max-width: none;
+        text-align: left;
+    }
+
+    @media (max-width: 480px) {
+        .tehcnical-specifications__item {
+            padding: rem(20px) rem(5px);
+        }
+    }
+}

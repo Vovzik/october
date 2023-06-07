@@ -1,3 +1,5 @@
+
+/* @extend %fonts; */
 %fonts {
     font-family: 'Sora', sans-serif;
     font-weight: 400;
@@ -6,10 +8,62 @@
     color: #000000;
 }
 
+/* @extend %fonts2; */
 %fonts2 {
     font-family: 'Sora', sans-serif;
     font-weight: 400;
     font-size: rem(20px);
     line-height: 130%;
+    color: #000000;
+}
+
+
+/* @extend %fonts3; */
+%fonts3 {
+    font-family: 'Sora', sans-serif;
+    font-weight: 400;
+    font-size: rem(50px);
+    line-height: 140%;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+/* @extend %fonts4; */
+%fonts4 {
+    font-family: 'Sora', sans-serif;
+    font-weight: 600;
+    font-size: rem(41px);
+    line-height: 140%;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+/* @extend %fonts5; */
+%fonts5 {
+    font-family: 'Sora', sans-serif;
+    font-weight: 600;
+    font-size: rem(50px);
+    line-height: 140%;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+/* @extend %fonts6; */
+%fonts6 {
+    font-family: 'Sora', sans-serif;
+    font-weight: 400;
+    font-size: rem(26px);
+    line-height: 140%;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+/* @extend %fonts7; */
+%fonts7 {
+    font-family: 'Sora', sans-serif;
+    font-weight: 400;
+    font-size: rem(16px);
+    line-height: 140%;
+    text-transform: uppercase;
     color: #000000;
 }

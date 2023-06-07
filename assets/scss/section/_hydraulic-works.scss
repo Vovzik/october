@@ -1,0 +1,90 @@
+.hydraulic-works {
+
+    // .hydraulic-works__inner
+
+    &__inner {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-top: rem(45px);
+    }
+
+    // .hydraulic-works__info
+
+    &__info {
+        width: rem(770px);
+        margin-right: rem(30px);
+        p {
+            @extend %fonts;
+        }
+    }
+
+    // .hydraulic-works__title
+
+    &__title {
+        font-family: 'Sora', sans-serif;
+        font-weight: 600;
+        font-size: rem(50px);
+        line-height: 140%;
+        text-transform: uppercase;
+        color: #000000;
+        margin-bottom: rem(50px);
+    }
+
+    // .hydraulic-works__images
+
+    &__images {
+        width: rem(422px);
+        height: rem(508px);
+        overflow: hidden;
+        border-radius: rem(15px);
+    }
+
+    // .hydraulic-works__img
+
+    &__img {
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+         object-position: center;
+    }
+
+    @media (max-width: 1199px) {
+        &__inner {
+           flex-direction: column;
+        }
+
+        &__info {
+           width: 100%;
+           margin: 0px;
+           margin-bottom: rem(20px);
+        }
+
+        &__images {
+           width: 100%;
+        }
+
+        &__title {
+            font-size: rem(30px);
+        }
+    }
+
+    @media(max-width: 480px) {
+        &__inner {
+            margin-top: rem(30px);
+        }
+
+        &__title {
+            font-size: rem(20px);
+            margin-bottom: rem(20px);
+        }
+
+        &__info p {
+            font-size: rem(12px);
+        }
+
+        &__images {
+            height: rem(170px);
+        }
+    }
+}

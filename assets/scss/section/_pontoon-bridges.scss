@@ -1,0 +1,96 @@
+.pontoon-bridges {
+
+    &__inner {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-top: rem(45px);
+    }
+
+    // .pontoon-bridges__info
+
+    &__info {
+        width: rem(635px);
+        margin-right: rem(35px);
+    }
+
+    // .pontoon-bridges__title
+
+    &__title {
+        font-family: 'Sora', sans-serif;
+        font-weight: 600;
+        font-size: rem(50px);
+        line-height: 140%;
+        text-transform: uppercase;
+        color: #000000;
+        margin-bottom: rem(40px);
+    }
+
+    // .pontoon-bridges__title-right
+
+    &__title-right {
+        text-align: right;
+        line-height: 140%;
+    }
+
+    // .pontoon-bridges__redactor
+
+    &__redactor {
+        p {
+            font-family: 'Sora', sans-serif;
+            font-weight: 400;
+            font-size: rem(20px);
+            line-height: 140%;
+            color: #000000;
+            &:not(:last-child) {
+                margin-bottom: rem(30px);
+            }
+        }
+    }
+
+    // .pontoon-bridges__images
+
+    &__images {
+    }
+
+    // .pontoon-bridges__img
+
+    &__img {
+    }
+
+    @media (max-width: 991px) {
+         &__inner {
+            flex-direction: column;
+         }
+
+         &__info {
+            width: 100%;
+            margin: 0px;
+            margin-bottom: rem(20px);
+         }
+
+         &__images {
+            width: 100%;
+            text-align: center;
+         }
+    }
+
+    @media (max-width: 480px) {
+        &__title {
+          font-size: rem(20px);
+          margin-bottom: rem(20px);
+        }
+
+        &__inner {
+            margin-top: rem(30px);
+        }
+
+        &__redactor {
+            p {
+                font-size: rem(12px);
+            }
+        }
+    }
+        
+ 
+}

@@ -1,0 +1,126 @@
+.dredging {
+
+    // .dredging__content
+
+    &__content {
+
+    }
+
+    // .dredging__title
+
+    &__title {
+        font-family: 'Sora', sans-serif;
+        font-weight: 600;
+        font-size: rem(50px);
+        line-height: 140%;
+        text-transform: uppercase;
+        color: #000000;
+        text-align: center;
+        margin-bottom: rem(72px);
+        margin-top: rem(45px);
+    }
+
+    // .dredging__table
+
+    &__table {
+        display: block;
+        width: rem(1240px);
+    }
+
+    &__scroll {
+        overflow: auto;
+        &:not(:last-child) {
+            margin-bottom: rem(45px);
+        }
+    }
+
+    &__table tbody {
+        border: rem(1px) solid #000000;
+        border-radius: rem(4px) rem(4px) 0px 0px;
+        display: block;
+        overflow: hidden;
+    }
+
+    // .dredging__table-tr
+
+    &__table-tr {
+        display: grid;
+        grid-template-columns: rem(231px)  rem(231px) rem(231px) rem(311px)  rem(231px);
+        &:nth-child(1) {
+            background: #00457E;
+        }
+        &:not(:last-child) {
+            border-bottom: rem(1px) solid #000000;
+        }
+    }
+
+     &__table-4x &__table-tr {
+        grid-template-columns: rem(231px)  rem(360px) rem(414px) rem(233px);
+     }
+
+    // .dredging__table-th
+
+    &__table-th {
+        font-family: 'Inter', sans-serif;
+        font-weight: 700;
+        font-size: rem(17px);
+        line-height: 130%;
+        color: #FFFFFF;
+        min-height: rem(50px);
+        padding: rem(4px) rem(20px);
+        text-align: left;
+        &:not(:last-child) {
+            border-right: rem(1px) solid #000000;
+        }
+    }
+
+    // .dredging__table-td
+
+    &__table-td {
+        font-family: 'Inter', sans-serif;
+        font-weight: 400;
+        font-size: rem(17px);
+        line-height: 130%;
+        color: #000000;
+        min-height: rem(39px);
+        padding: rem(5px) rem(20px);
+        display: flex;
+        align-items: center;
+        &:not(:last-child) {
+            border-right: rem(1px) solid #000000;
+        }
+    }
+
+
+    @media(max-width: 480px) {
+        &__title {
+            margin: rem(30px) 0px rem(20px);
+            font-size: rem(20px);
+        }
+
+        &__table-th {
+            font-size: rem(12px);
+            min-height: rem(34px);
+            padding-left: rem(10px);
+        }
+
+        &__table-td {
+            font-size: rem(12px);
+            min-height: rem(26px);
+            padding-left: rem(10px);
+        }
+
+        &__table {
+            display: block;
+            width: rem(775px);
+        }
+
+        &__table-tr {
+            grid-template-columns: rem(115px)  rem(130px) rem(180px) rem(200px)  rem(150px);
+        }
+
+        &__table-4x &__table-tr {
+            grid-template-columns: rem(115px)  rem(250px) rem(200px) rem(200px);
+         }
+    }
+}

@@ -1,0 +1,10 @@
+.productions-production-sale {
+    @media(max-width: 480px) {
+        .productions__item {
+            width: rem(218px);
+            &:nth-child(2n) {
+                margin-left: auto;
+            }
+        }
+    }
+}

@@ -167,6 +167,24 @@ function ready() {
         el: '.page-gallery-progresbar-js',
         type: 'progressbar',
       },
+      breakpoints: {
+        320: {
+          slidesPerView: 2,
+          spaceBetween: 10
+        },
+
+        481: {
+          spaceBetween: 21
+        },
+
+        768: {
+          slidesPerView: 3,
+        },
+
+        992: {
+          slidesPerView: 4,
+        },
+      }
      
      });
     }

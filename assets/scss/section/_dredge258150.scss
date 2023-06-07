@@ -1,0 +1,39 @@
+.dredge258150 {
+    &__item {
+        padding: rem(20px);
+        &:nth-child(4),
+        &:nth-child(5) {
+         padding: rem(20px);
+        }
+    }
+
+    &__subtitle {
+        margin-bottom: (rem(43px));
+    }
+
+    &__subtitle-margin {
+        margin-bottom: rem(11px);
+    }
+
+    &__descr {
+        font-family: 'Sora', sans-serif;
+        font-weight: 400;
+        font-size: rem(10px);
+        line-height: 140%;
+        text-align: center;
+        color: #000000;
+        margin-bottom: rem(10px);
+    }
+
+    @media (max-width: 480px) {
+        &__item {
+            padding: rem(7px);
+        }
+      &__item:nth-child(4),
+      &__item:nth-child(5) {
+         padding: rem(7px);
+        }
+    }
+
+   
+}

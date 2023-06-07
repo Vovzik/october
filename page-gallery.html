@@ -424,13 +424,13 @@
                             медиагалерея
                          </h2>
                          <div class="media-gallery__items">
-                            <div class="media-gallery__item">
+                            <div class="media-gallery__item js__popup-link gallery-scale" data-modal="#popup">
                                 <img class="media-gallery__img" src="assets/img/media-gallery/1.jpg" alt="alt">
                             </div>
-                            <div class="media-gallery__item">
+                            <div class="media-gallery__item js__popup-link  gallery-scale" data-modal="#popup">
                                 <img class="media-gallery__img" src="assets/img/media-gallery/2.jpg" alt="alt">
                             </div>
-                            <div class="media-gallery__item">
+                            <div class="media-gallery__item js__popup-link  gallery-scale" data-modal="#popup">
                                 <img class="media-gallery__img" src="assets/img/media-gallery/3.jpg" alt="alt">
                             </div>
                          </div>
@@ -496,7 +496,16 @@
     </div>
 
 
-
+    <div data-popup="#popup" class="popup js__popup-open">
+        <div class="popup__body">
+          <div class="popup__content js__popup-content">
+            <span class="popup__close js__popup-close">
+              <img src="assets/img/popup/close.svg" alt="alt">
+            </span>
+            <video class="popup__video popup-video-js" controls src="assets/video/video.mkv"></video>
+          </div>
+        </div>
+      </div>
 
 
 

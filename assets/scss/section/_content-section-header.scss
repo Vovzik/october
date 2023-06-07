@@ -1,3 +1,7 @@
 .content-section-header {
     padding: rem(172px) 0px rem(85px);
+
+    @media (max-width: 480px) {
+        padding: rem(87px) 0px rem(30px);
+    }
 }

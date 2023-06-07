@@ -1,0 +1,33 @@
+.projectКС-110-34К {
+    .project82700__images {
+        width: rem(391px);
+        height: rem(518px);
+    }
+
+    .project82700__img {
+        width: auto;
+        height: auto;
+    }
+
+    .equipment2__list {
+        width: 50%;
+        max-width: none;
+    }
+
+    @media (max-width: 1199px) {
+        .equipment2__inner {
+            width: 100%;
+        }
+    }
+
+    @media(max-width: 480px) {
+        .project82700__images {
+            width: 100%;
+            height: auto;
+        }
+
+       .equipment2__list {
+        width: 100%;
+       }
+    }
+}
