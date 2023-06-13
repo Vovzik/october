@@ -20,7 +20,7 @@
                         <li class="breadcrumbs__item">Услуги</li>
                     </ul>
                     <div class="productions__items">
-                        <a class="productions__item" href="http://rubilnik-test.space/october/page-prodaction-sale.php">
+                        <a class="productions__item" href="http://rubilnik-test.space/october/page-prodaction-sale-services.php">
                             <div class="productions__item-box">
                                 <img class="productions__item-img" src="assets/img/services/1.png" alt="alt">
                             </div>
@@ -33,7 +33,7 @@
                                 </span>
                             </div>
                         </a>
-                        <a class="productions__item" href="http://rubilnik-test.space/october/page-dredge-crewed.php">
+                        <a class="productions__item" href="http://rubilnik-test.space/october/page-dredge-crewed-services.php">
                             <div class="productions__item-box">
                                 <img class="productions__item-img" src="assets/img/services/2.png" alt="alt">
                             </div>
@@ -46,7 +46,7 @@
                                 </span>
                             </div>
                         </a>
-                        <a class="productions__item" href="http://rubilnik-test.space/october/page-hydraulic-works.php">
+                        <a class="productions__item" href="http://rubilnik-test.space/october/page-hydraulic-works-services.php">
                             <div class="productions__item-box">
                                 <img class="productions__item-img" src="assets/img/services/3.png" alt="alt">
                             </div>
@@ -91,7 +91,7 @@
                                 </h2>
                             </div>
                         </a>
-                        <a class="productions__item" href="http://rubilnik-test.space/october/page-dredging.php">
+                        <a class="productions__item" href="http://rubilnik-test.space/october/page-dredging-services.php">
                             <div class="productions__item-box">
                                 <img class="productions__item-img" src="assets/img/services/3.png" alt="alt">
                             </div>

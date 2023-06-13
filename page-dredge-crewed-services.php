@@ -15,6 +15,7 @@
                     <div class="container">
                         <ul class="breadcrumbs">
                             <li class="breadcrumbs__item"><a class="breadcrumbs__item-link" href="http://rubilnik-test.space/october">Главная</a></li>
+                            <li class="breadcrumbs__item"><a class="breadcrumbs__item-link" href="http://rubilnik-test.space/october/page-services.php">Услуги</a></li>
                             <li class="breadcrumbs__item">Аренда земснарядов с экипажем</li>
                         </ul>
                         <h1 class="dredge-crewed__title">

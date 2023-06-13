@@ -25,7 +25,7 @@
                 Наше предприятие ООО «Октябрьский СЗ НН» основано в 1993 году на базе Судостроительно – Судоремонтного
                 завода им. 40 – годовщины октября
               </p>
-              <a class="home__btn home-btn" href="#">
+              <a class="home__btn home-btn js__popup-link" href="#" data-modal="#popup-callback">
                 Заказать
               </a>
             </div>
@@ -194,7 +194,7 @@
                 <p class="productions__text">
                   Увеличение производительности работы земснаряда за счёт модернизации грунтозаборного устройства
                 </p>
-                <a class="productions__btn productions-btn" href="#">
+                <a class="productions__btn productions-btn js__popup-link" href="#" data-modal="#popup-callback">
                   Заказать
                 </a>
               </div>
@@ -312,17 +312,6 @@
 
 
 
-
-  <div data-popup="#popup" class="popup js__popup-open">
-    <div class="popup__body">
-      <div class="popup__content js__popup-content">
-        <span class="popup__close js__popup-close">
-          <img src="assets/img/popup/close.svg" alt="alt">
-        </span>
-        <video class="popup__video popup-video-js" controls src="assets/video/video.mkv"></video>
-      </div>
-    </div>
-  </div>
 
 
 

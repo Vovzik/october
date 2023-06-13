@@ -31,4 +31,25 @@
   .productions__item-inner {
     flex-direction: column;
   }
+
+  @media (max-width: 1199px) {
+    .productions__items {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 767px) {
+    .productions__items {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  @media (max-width: 480px) {
+    &__link {
+        font-size: rem(14px);
+        margin-top: rem(20px);
+        min-width: rem(73px);
+        width: auto;
+    }
+  }
 }

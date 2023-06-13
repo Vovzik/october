@@ -18,7 +18,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="http://rubilnik-test.space/october/#services">
+                            <a href="http://rubilnik-test.space/october/page-services.php">
                                 Услуги
                             </a>
                         </li>
@@ -30,7 +30,7 @@
                     <div class='header__burger-item js__header-burger header__burger--middle'></div>
                     <div class='header__burger-item js__header-burger header__burger--bottom'></div>
                 </div>
-                <a class="header__btn header-btn" href="#">
+                <a class="header__btn header-btn js__popup-link" href="#" data-modal="#popup-callback">
                     Позвонить
                 </a>
             </div>

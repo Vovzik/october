@@ -52,3 +52,36 @@
         </div>
     </div>
 </footer>
+
+
+<div data-popup="#popup-callback" class="popup popup-callback js__popup-open">
+    <div class="popup__body">
+        <div class="popup__content js__popup-content">
+                    <span class="popup__close js__popup-close">
+                         <img src="assets/img/popup/close.svg" alt="alt">
+                    </span>
+            <h2 class="popup-callback__title">
+                Заказать обратный звонок.
+            </h2>
+            <form action="#" class="popup-callback__form">
+                <input type="text" class="popup-callback__input" name="name" placeholder="Имя">
+                <input type="tel" class="popup-callback__input phone" name="phone" placeholder="Телефон">
+                <button class="popup-callback__btn header-btn" type="submit">
+                    Отправить
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<div data-popup="#popup" class="popup js__popup-open">
+    <div class="popup__body">
+        <div class="popup__content js__popup-content">
+        <span class="popup__close js__popup-close">
+          <img src="assets/img/popup/close.svg" alt="alt">
+        </span>
+            <video class="popup__video popup-video-js" controls src="assets/video/video.mkv"></video>
+        </div>
+    </div>
+</div>

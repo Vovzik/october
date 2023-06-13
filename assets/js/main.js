@@ -1,6 +1,7 @@
 import './libs/jquery-3.5.1.min.js'
 import './libs/jquery.fancybox.min.js'
 import './libs/swiper-bundle.min.js'
+import './libs/jquery.maskedinput.min.js'
 
 
 document.addEventListener("DOMContentLoaded", ready);
@@ -190,6 +191,14 @@ function ready() {
     }
 
     pageGallerySlider();
+
+
+    const telInp = $('input[type="tel"]');
+
+    telInp.each(function () {
+        $(this).mask("+7 (999) 999-99-99");
+    });
+
 }
 
 
