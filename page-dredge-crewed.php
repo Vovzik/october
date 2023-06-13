@@ -12,45 +12,7 @@
 <body>
 
     <div class="wrapper ">
-        <header class="header">
-            <div class="header__content header-fixed-js">
-                <div class="container">
-                    <div class="header__inner">
-                        <a class="header__logo" href="/">
-                            <img class="header__logo-img" src="assets/img/header/logo.svg" alt="Logo">
-                        </a>
-                        <nav class="header__nav header-nav-open-js">
-                            <ul class="header__list">
-                                <li>
-                                    <a href="#">
-                                        О нас
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        Продукция
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        Услуги
-                                    </a>
-                                </li>
-
-                            </ul>
-                        </nav>
-                        <div class='header__burger js__header-burgerclick'>
-                            <div class='header__burger-item js__header-burger header__burger--top'></div>
-                            <div class='header__burger-item js__header-burger header__burger--middle'></div>
-                            <div class='header__burger-item js__header-burger header__burger--bottom'></div>
-                        </div>
-                        <a class="header__btn header-btn" href="#">
-                            Позвонить
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </header>
+        <? include 'header.php' ?>
         <main class="main">
             <section class="dredge-crewed">
                 <div class="dredge-crewed__content content-section-header">
@@ -157,61 +119,7 @@
                 </div>
             </section>
         </main>
-        <footer class="footer">
-            <div class="footer__content">
-                <div class="container">
-                    <div class="footer__inner">
-                        <a class="footer__logo" href="/">
-                            <img class="footer__logo-img" src="assets/img/header/logo.svg" alt="Logo">
-                        </a>
-                        <ul class="footer__list">
-                            <li>
-                                <a href="">
-                                    Модеризация грунтозаборных устройств
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    Производство и продажа земснарядов
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    Аренда земснаряда экипажем
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    Дноуглубительная техника
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    Понтонные мосты и переправы
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    Гидромеханизированные работы
-                                </a>
-                            </li>
-                        </ul>
-                        <div class="footer__contacts">
-                            <a class="footer__contacts-text footer__contacts-text-mail"
-                                href="mailto:okt-ssrz@yandex.ru">
-                                okt-ssrz@yandex.ru
-                            </a>
-                            <a class="footer__contacts-text footer__contacts-text-phone" href="tel:+79107903099">
-                                Тел.: +7-910-790-30-99
-                            </a>
-                            <div class="footer__contacts-text">
-                                Галерея
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
+        <? include 'footer.php' ?>
     </div>
 
 

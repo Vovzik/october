@@ -2,65 +2,24 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Октябрьский</title>
-  <link rel="stylesheet" href="assets/css/main.css">
+  <?php include 'head.php'?>
 </head>
 
 <body>
 
   <div class="wrapper ">
-    <header class="header">
-      <div class="header__content header-fixed-js">
-        <div class="container">
-          <div class="header__inner">
-            <a class="header__logo" href="/">
-              <img class="header__logo-img" src="assets/img/header/logo.svg" alt="Logo">
-            </a>
-            <nav class="header__nav header-nav-open-js">
-              <ul class="header__list">
-                <li>
-                  <a href="#">
-                    О нас
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    Продукция
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    Услуги
-                  </a>
-                </li>
+   <?php include 'header.php'; ?>
 
-              </ul>
-            </nav>
-            <div class='header__burger js__header-burgerclick'>
-              <div class='header__burger-item js__header-burger header__burger--top'></div>
-              <div class='header__burger-item js__header-burger header__burger--middle'></div>
-              <div class='header__burger-item js__header-burger header__burger--bottom'></div>
-            </div>
-            <a class="header__btn header-btn" href="#">
-              Позвонить
-            </a>
-          </div>
-        </div>
-      </div>
-    </header>
     <main class="main">
       <section class="home">
         <div class="home__content" style="background-image: url('assets/img/home/bg.jpg');">
           <div class="container">
-            <h1 class="home__title">
-              <div class="home__title-text">
-                Судостроительный завод в Нижнем Новгороде
-              </div>
+              <h1 class="home__title">
+                  Судостроительный завод в Нижнем Новгороде
+              </h1>
+            <div class="home__title-text">
               Октябрьский
-            </h1>
+            </div>
             <div class="home__inner">
               <p class="home__text">
                 Наше предприятие ООО «Октябрьский СЗ НН» основано в 1993 году на базе Судостроительно – Судоремонтного
@@ -73,7 +32,7 @@
           </div>
         </div>
       </section>
-      <section class="about">
+      <section class="about" id="about">
         <div class="about__content">
           <div class="container about__container">
             <div class="about__inner">
@@ -118,7 +77,7 @@
                 <h3 class="about__subtitle">
                   г. Нижний Новгород, ул. Монастырка 20
                 </h3>
-                <a class="about__link" href="#">
+                <a class="about__link" href="http://rubilnik-test.space/october/page-about.php">
                   Узнать больше
                 </a>
               </div>
@@ -221,7 +180,7 @@
           </div>
         </div>
       </section>
-      <section class="productions">
+      <section class="productions" id="products">
         <div class="productions__content">
           <div class="container">
             <div class="productions__inner">
@@ -241,7 +200,7 @@
               </div>
             </div>
             <div class="productions__items">
-              <a class="productions__item" href="#">
+              <a class="productions__item" href="http://rubilnik-test.space/october/page-dredging.php">
                 <div class="productions__item-box">
                   <img class="productions__item-img" src="assets/img/productions/1.png" alt="alt">
                 </div>
@@ -253,7 +212,7 @@
                   </h3>
                 </div>
               </a>
-              <a class="productions__item" href="#">
+              <a class="productions__item" href="http://rubilnik-test.space/october/page-modernization.php">
                 <div class="productions__item-box">
                   <img class="productions__item-img" src="assets/img/productions/2.png" alt="alt">
                 </div>
@@ -263,7 +222,7 @@
                   </h3>
                 </div>
               </a>
-              <a class="productions__item" href="#">
+              <a class="productions__item" href="http://rubilnik-test.space/october/page-pontoon-bridges.php">
                 <div class="productions__item-box">
                   <img class="productions__item-img" src="assets/img/productions/3.png" alt="alt">
                 </div>
@@ -277,7 +236,7 @@
           </div>
         </div>
       </section>
-      <section class="video">
+      <div class="video">
         <div class="video__content">
           <div class="container">
             <div class="video__inner">
@@ -288,7 +247,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </div>
       <section class="gallery">
         <div class="gallery__content">
           <div class="container">
@@ -301,7 +260,7 @@
                   фотогалерея
                  </h2>
                  <div class="gallery__navigation">
-                   <a class="gallery__btn" href="#">
+                   <a class="gallery__btn" href="http://rubilnik-test.space/october/page-gallery.php">
                     Все фотографии
                    </a>
                    <div class="gallery__prev gallery-prev gallery-prev-js">
@@ -346,61 +305,8 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
-      <div class="footer__content">
-        <div class="container">
-           <div class="footer__inner">
-              <a class="footer__logo" href="/">
-                <img class="footer__logo-img" src="assets/img/header/logo.svg" alt="Logo">
-              </a>
-              <ul class="footer__list">
-                <li>
-                  <a href="">
-                    Модеризация грунтозаборных устройств
-                  </a>
-                </li>
-                <li>
-                  <a href="">
-                    Производство и продажа земснарядов
-                  </a>
-                </li>
-                <li>
-                  <a href="">
-                    Аренда земснаряда экипажем
-                  </a>
-                </li>
-                <li>
-                  <a href="">
-                    Дноуглубительная техника
-                  </a>
-                </li>
-                <li>
-                  <a href="">
-                    Понтонные мосты и переправы
-                  </a>
-                </li>
-                <li>
-                  <a href="">
-                    Гидромеханизированные работы
-                  </a>
-                </li>
-              </ul>
-              <div class="footer__contacts">
-                <a class="footer__contacts-text footer__contacts-text-mail" href="mailto:okt-ssrz@yandex.ru">
-                  okt-ssrz@yandex.ru
-                </a>
-                <a class="footer__contacts-text footer__contacts-text-phone" href="tel:+79107903099">
-                  Тел.: +7-910-790-30-99
-                </a>
-                <div class="footer__contacts-text">
-                  Галерея
-                </div>
-              </div>
-           </div>
-        </div>
-      </div>
-    </footer>
-  </div>
+
+      <?php include 'footer.php'; ?>
   </div>
 
 

@@ -75,6 +75,11 @@ h1 {
   overflow: hidden;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 
 @media (min-width:  576px) {
   .container {

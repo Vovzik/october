@@ -2,61 +2,21 @@
 <html lang="ru">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Октябрьский</title>
-    <link rel="stylesheet" href="assets/css/main.css">
+    <?php include 'head.php'?>
 </head>
 
 <body>
 
     <div class="wrapper ">
-        <header class="header">
-            <div class="header__content header-fixed-js">
-                <div class="container">
-                    <div class="header__inner">
-                        <a class="header__logo" href="/">
-                            <img class="header__logo-img" src="assets/img/header/logo.svg" alt="Logo">
-                        </a>
-                        <nav class="header__nav header-nav-open-js">
-                            <ul class="header__list">
-                                <li>
-                                    <a href="#">
-                                        О нас
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        Продукция
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        Услуги
-                                    </a>
-                                </li>
-
-                            </ul>
-                        </nav>
-                        <div class='header__burger js__header-burgerclick'>
-                            <div class='header__burger-item js__header-burger header__burger--top'></div>
-                            <div class='header__burger-item js__header-burger header__burger--middle'></div>
-                            <div class='header__burger-item js__header-burger header__burger--bottom'></div>
-                        </div>
-                        <a class="header__btn header-btn" href="#">
-                            Позвонить
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </header>
+        <?php include 'header.php'?>
         <main class="main">
             <section class="tehcnical-specifications dredge">
                 <div class="content-section-header">
                     <div class="container">
                         <ul class="breadcrumbs">
-                            <li class="breadcrumbs__item"><a class="breadcrumbs__item-link" href="/">Дноуглубительная
+                            <li class="breadcrumbs__item"><a class="breadcrumbs__item-link" href="http://rubilnik-test.space/october">
+                                    Главная</a></li>
+                            <li class="breadcrumbs__item"><a class="breadcrumbs__item-link" href="http://rubilnik-test.space/october/page-dredging.php">Дноуглубительная
                                     техника</a></li>
                             <li class="breadcrumbs__item">258.250ГП</li>
                         </ul>
@@ -231,61 +191,7 @@
                 </div>
             </section>
         </main>
-        <footer class="footer">
-            <div class="footer__content">
-                <div class="container">
-                    <div class="footer__inner">
-                        <a class="footer__logo" href="/">
-                            <img class="footer__logo-img" src="assets/img/header/logo.svg" alt="Logo">
-                        </a>
-                        <ul class="footer__list">
-                            <li>
-                                <a href="">
-                                    Модеризация грунтозаборных устройств
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    Производство и продажа земснарядов
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    Аренда земснаряда экипажем
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    Дноуглубительная техника
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    Понтонные мосты и переправы
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    Гидромеханизированные работы
-                                </a>
-                            </li>
-                        </ul>
-                        <div class="footer__contacts">
-                            <a class="footer__contacts-text footer__contacts-text-mail"
-                                href="mailto:okt-ssrz@yandex.ru">
-                                okt-ssrz@yandex.ru
-                            </a>
-                            <a class="footer__contacts-text footer__contacts-text-phone" href="tel:+79107903099">
-                                Тел.: +7-910-790-30-99
-                            </a>
-                            <div class="footer__contacts-text">
-                                Галерея
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
+        <?php include 'footer.php'?>
     </div>
 
 

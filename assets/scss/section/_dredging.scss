@@ -34,10 +34,9 @@
         }
     }
 
-    &__table tbody {
+    &__table  {
         border: rem(1px) solid #000000;
         border-radius: rem(4px) rem(4px) 0px 0px;
-        display: block;
         overflow: hidden;
     }
 
@@ -46,6 +45,10 @@
     &__table-tr {
         display: grid;
         grid-template-columns: rem(231px)  rem(231px) rem(231px) rem(311px)  rem(231px);
+        transition: 0.4s;
+        &:hover {
+            background: #DDEAF4;
+        }
         &:nth-child(1) {
             background: #00457E;
         }
@@ -53,6 +56,7 @@
             border-bottom: rem(1px) solid #000000;
         }
     }
+
 
      &__table-4x &__table-tr {
         grid-template-columns: rem(231px)  rem(360px) rem(414px) rem(233px);

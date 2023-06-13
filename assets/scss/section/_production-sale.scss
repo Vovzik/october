@@ -40,12 +40,14 @@
 
     &__title-text {
         text-align: right;
+        display: block;
     }
 
     // .production-sale__title-text2
 
     &__title-text2 {
         margin-left: rem(56px);
+        display: block;
     }
 
     // .production-sale__images

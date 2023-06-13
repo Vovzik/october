@@ -2,73 +2,31 @@
 <html lang="ru">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Октябрьский</title>
-    <link rel="stylesheet" href="assets/css/main.css">
+    <?php include 'head.php'; ?>
 </head>
 
 <body>
 
     <div class="wrapper ">
-        <header class="header">
-            <div class="header__content header-fixed-js">
-                <div class="container">
-                    <div class="header__inner">
-                        <a class="header__logo" href="/">
-                            <img class="header__logo-img" src="assets/img/header/logo.svg" alt="Logo">
-                        </a>
-                        <nav class="header__nav header-nav-open-js">
-                            <ul class="header__list">
-                                <li>
-                                    <a href="#">
-                                        О нас
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        Продукция
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        Услуги
-                                    </a>
-                                </li>
-
-                            </ul>
-                        </nav>
-                        <div class='header__burger js__header-burgerclick'>
-                            <div class='header__burger-item js__header-burger header__burger--top'></div>
-                            <div class='header__burger-item js__header-burger header__burger--middle'></div>
-                            <div class='header__burger-item js__header-burger header__burger--bottom'></div>
-                        </div>
-                        <a class="header__btn header-btn" href="#">
-                            Позвонить
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </header>
+        <?php include 'header.php'; ?>
         <main class="main">
             <section class="page-about">
                 <div class="page-about__content">
                     <div class="container">
                         <ul class="breadcrumbs">
-                            <li class="breadcrumbs__item"><a class="breadcrumbs__item-link" href="/">Главная</a></li>
+                            <li class="breadcrumbs__item"><a class="breadcrumbs__item-link" href="http://rubilnik-test.space/october/">Главная</a></li>
                             <li class="breadcrumbs__item">О компании</li>
                         </ul>
                         <div class="page-about__inner page-about__margin">
                             <div class="page-about__info">
                                 <h1 class="page-about__title">
                                     СУДОСТРОИТЕЛЬНЫЙ И
-                                    <div class="page-about__title-text">
+                                    <span class="page-about__title-text">
                                         СУДОРЕМОНТНЫЙ завод
-                                    </div>
-                                    <div class="page-about__title-text2">
+                                    </span>
+                                    <span class="page-about__title-text2">
                                         ИМЕНИ 40-й ГОДОВЩИНЫ ОКТЯБРЯ
-                                    </div>
+                                    </span>
                                 </h1>
                                 <p>
                                     Если поездка по Волге считается отдыхом одним из самых увлекательных, то в этом немалая заслуга завода имени 40-й годовщины Октября, где зимуют лучшие суда пассажирского флота Волжского объединенного ордена Ленина речного пароходства. Заводу нынче испол­няется 125 лет. Долгая и трудная история была у Собчинского затона, прежде чем он стал самым современ­ным и крупным судостроительным и судоремонтным предприятием Министерства речного флота. Гражданская война, Великая Отечественная, годы восстановле­ния народного хозяйства, летопись пятилеток — во все периоды истории рабочие завода и плавающий состав приписного флота принимали в жизни страны самое активное участие, внесли достойный вклад в укрепление могущества государства.Сегодня завод не только занят текущим и восстановительным ремонтом флота. Его коллектив успешно освоил строительство судов самых различных видов. Именно из его акватории в большое плавание ушли первые отечественные грузовые и пассажирские ката­мараны. Готовится к перевозке сельскохозяйственной продукции серия судов-овощевозов. Немало вспомогательного судового оборудования, которое изготовляется в цехах завода, можно встретить на судах не только нашей страны, но и за рубежом
@@ -132,61 +90,7 @@
                 </div>
             </section>
         </main>
-        <footer class="footer">
-            <div class="footer__content">
-                <div class="container">
-                    <div class="footer__inner">
-                        <a class="footer__logo" href="/">
-                            <img class="footer__logo-img" src="assets/img/header/logo.svg" alt="Logo">
-                        </a>
-                        <ul class="footer__list">
-                            <li>
-                                <a href="">
-                                    Модеризация грунтозаборных устройств
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    Производство и продажа земснарядов
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    Аренда земснаряда экипажем
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    Дноуглубительная техника
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    Понтонные мосты и переправы
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    Гидромеханизированные работы
-                                </a>
-                            </li>
-                        </ul>
-                        <div class="footer__contacts">
-                            <a class="footer__contacts-text footer__contacts-text-mail"
-                                href="mailto:okt-ssrz@yandex.ru">
-                                okt-ssrz@yandex.ru
-                            </a>
-                            <a class="footer__contacts-text footer__contacts-text-phone" href="tel:+79107903099">
-                                Тел.: +7-910-790-30-99
-                            </a>
-                            <div class="footer__contacts-text">
-                                Галерея
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
+        <?php include 'footer.php'; ?>
     </div>
 
 

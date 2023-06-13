@@ -14,20 +14,22 @@
 
     &__title {
         font-family: 'Sora', sans-serif;
-        font-weight: 700;
-        font-size: rem(167px);
-        line-height: 100%;
+        font-weight: 400;
+        font-size: rem(36px);
+        line-height: 130%;
         text-transform: uppercase;
         color: #FFFFFF;
-        margin-bottom: rem(183px);
     }
 
     // .home__title-text
 
     &__title-text {
-        font-weight: 400;
-        line-height: 130%;
-        font-size: rem(36px);
+        font-family: 'Sora', sans-serif;
+        color: #FFFFFF;
+        font-weight: 700;
+        line-height: 100%;
+        font-size: rem(167px);
+       margin-bottom: rem(183px);
     }
 
     // .home__inner
@@ -56,13 +58,13 @@
         padding: 250px 0px 50px;
     }
     &__title {
-        font-size: rem(100px);
+      font-size: rem(20px);
     }
 
     // .home__title-text
 
     &__title-text {
-        font-size: rem(20px);
+      font-size: rem(100px);
     }
    }
 
@@ -82,13 +84,13 @@
         padding-top: rem(180px);
       }
 
-      &__title {
+      &__title-text {
         font-size: rem(90px);
       }
    }
 
    @media (max-width: 767px) {
-    &__title {
+    &__title-text {
         font-size: rem(60px);
       }
    }
@@ -99,14 +101,14 @@
      }
 
      &__title {
-        font-size: rem(36px);
-        text-align: center;
-        margin-bottom: rem(95px);
+       font-size: rem(16px);
+       text-align: center;
      }
 
      &__title-text {
-        font-size: rem(16px);
-        text-align: center;
+       font-size: rem(36px);
+       text-align: center;
+       margin-bottom: rem(95px);
      }
 
      &__text {
